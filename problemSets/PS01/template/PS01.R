@@ -27,14 +27,40 @@ pkgTest <- function(pkg){
 # ex: stringr
 # lapply(c("stringr"),  pkgTest)
 
-lapply(c(),  pkgTest)
+lapply(c("stringr"),  pkgTest)
 
 #####################
 # Problem 1
 #####################
 
 y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98, 80, 97, 95, 111, 114, 89, 95, 126, 98)
+print(y)
 
+# find sum of y
+sum(y)
+
+# find mean of y
+sum(y)/length(y)
+mean(y)
+# mean of y = 98.44
+
+#find sum of demeaned values
+demeanedSum <- NULL
+for( i in 1:length(y)){
+  demeanedSum[i] <- y[i] - mean(y)
+}
+demeanedSumSImple <- y - mean(y)
+sum(demeanedSumSImple)
+
+# sum of squared error
+squaredError <- demeanedSum^2
+sum(squaredError)
+
+#calculating the confidence interval
+#when the confidence coefficient = .90
+
+z90 <- qnorm((1 - .90)/2, lower.tail = FALSE)## (1-confidence coefficient)/2
+n <- length(na.omit())
 #####################
 # Problem 2
 #####################

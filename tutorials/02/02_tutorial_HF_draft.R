@@ -18,7 +18,7 @@ getwd()
 # Is there a relationship between education and income?
 
 # Load data 
-df <- read.csv("datasets/fictional_data.csv")
+df <- read.csv("C:/Users/dring/Documents/GitHub/StatsI_Fall2023/datasets/fictional_data.csv")
 
 # Selection of variables
 # Education: University level education in years
@@ -82,10 +82,10 @@ sd(df$income)/sqrt(length(df$income)) # Standard error
 
 # The **approximate** solution 
 # Lower bound, 95 confidence level
-upper_95 = mean(df$income)+(1.96*sd(df$income)/sqrt(length(df$income)))
+upper_95 <- mean(df$income)+(1.96*sd(df$income)/sqrt(length(df$income)))
 
 # Upper bound, 95 confidence level
-lower_95 = mean(df$income)-(1.96*sd(df$income)/sqrt(length(df$income)))
+lower_95 <- mean(df$income)-(1.96*sd(df$income)/sqrt(length(df$income)))
 
 # Print
 lower_95
@@ -95,13 +95,13 @@ upper_95
 # The **precise** solution, using normal distribution
 # Lower bound, 95 confidence level
 lower_95_n <- qnorm(0.025, 
-                    mean = mean(df$incom), 
+                    mean = mean(df$income), 
                     sd = (sd(df$income)/sqrt(length(df$income))))
 
 # Upper bound, 95 confidence level
 upper_95_n <- qnorm(0.975,
                     mean = mean(df$income),
-                    sd = (sd(df$incom)/sqrt(length(df$income))))
+                    sd = (sd(df$income)/sqrt(length(df$income))))
 
 # Step by step
 ?qnorm
