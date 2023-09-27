@@ -36,6 +36,11 @@ lapply(c("stringr"),  pkgTest)
 y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98, 80, 97, 95, 111, 114, 89, 95, 126, 98)
 print(y)
 
+### Question 1 ###
+
+# calculating the confidence interval
+# when the confidence coefficient = .90
+
 # find sum of y
 sum(y)
 
@@ -44,23 +49,49 @@ sum(y)/length(y)
 mean(y)
 # mean of y = 98.44
 
-#find sum of demeaned values
-demeanedSum <- NULL
-for( i in 1:length(y)){
-  demeanedSum[i] <- y[i] - mean(y)
-}
-demeanedSumSImple <- y - mean(y)
-sum(demeanedSumSImple)
 
-# sum of squared error
-squaredError <- demeanedSum^2
-sum(squaredError)
 
-#calculating the confidence interval
-#when the confidence coefficient = .90
 
-z90 <- qnorm((1 - .90)/2, lower.tail = FALSE)## (1-confidence coefficient)/2
-n <- length(na.omit())
+lower_90_n <- qnorm(0.05,
+                    mean = mean(y),
+                    sd = (sd(y)/sqrt(length(y))))
+upper_90_n <- qnorm(0.95,
+                    mean = mean(y),
+                    sd = (sd(y)/sqrt(length(y))))
+
+# print lower bounds of confidence interval
+lower_90_n
+
+# print upper bounds of confidence interval
+upper_90_n
+
+### Question 2 ###
+
+### Is this school's average IQ higher than the national one?
+
+
+
+## Step 1: Assumptions.
+# The national average is 100.
+meana <- 100
+# The national sample has a normal distribution and random sampling.
+
+##Step 2: State hypothesis.
+# The average IQ of the students in this school is higher than 
+# the average IQ score among all the schools in the country.
+
+##Step 3: Calculate a test statistic.
+n <- length(y)
+s1 <- sd(y)
+
+y_t <- mean(y) - meana/
+
+
+# or, a faster way
+t.test(y, mu = 100, alternative = "greater")
+
+
+
 #####################
 # Problem 2
 #####################
