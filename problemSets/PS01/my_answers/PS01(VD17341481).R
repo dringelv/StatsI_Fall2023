@@ -182,8 +182,14 @@ ggplot(expenditure, aes(X2, X3))+
 
 # A simple plot show the spread of Y according to Region, but this could be 
 #clearer
-plot(expenditure$Region, expenditure$Y)
-expenditure$Y
+ggplot(expenditure, aes(x=factor(Region), y=Y)) +
+  geom_boxplot() +
+  labs(title="Box plot", 
+       subtitle="Per capita expenditure on shelters/housing
+assistance in state grouped by Region",
+       x="Region",
+       y="Expenditure") +
+  scale_x_discrete(labels=c("Northeast", "North Central", "South", "West"))
 
 # Finding the means of Y values grouped by region.
 # First, extracting values according to region.
@@ -212,7 +218,9 @@ ggplot(expenditure, aes(x=factor(Region), y=Y)) +
        subtitle="Per capita expenditure on shelters/housing
 assistance in state grouped by Region",
        x="Region",
-       y="Expenditure")
+       y="Expenditure") +
+  scale_x_discrete(labels=c("Northeast", "North Central", "South", "West")) 
+
 # From this graph we can see that region 4, the western region, has the highest 
 # average per capita expenditure on housing assistance.
 
@@ -230,5 +238,13 @@ expenditure %>%
   group_by(Region) %>%
 ggplot(aes(x = X1, y = Y, color = factor(Region), shape = factor(Region)))+
   geom_point() +
-  theme_classic()
+  theme_classic() +
+  labs(title="Y and X1", 
+       subtitle="Per capita expenditure on shelters/housing
+assistance in state compared to per capita 
+personal income,grouped by Region",
+       x="Per capita personal income",
+       y="Expenditure on housing assistance",
+       col = "Region", 
+       shape = "Region")
 

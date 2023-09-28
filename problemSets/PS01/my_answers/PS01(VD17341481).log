@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.26)  27 SEP 2023 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.26)  28 SEP 2023 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,10 +939,11 @@ File: lstlang3.sty 2023/02/27 1.9 listings language file
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 86.
 
-(PS01.R
+(PS01(VD17341481).R
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 4
 3.
- (C:\Users\dring\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+
+(C:\Users\dring\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
@@ -952,61 +953,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-(PS01.R) [1
+(PS01(VD17341481).R) [1
 
-{C:/Users/dring/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(PS01.R) (PS01.R) (PS01.R) (PS01.R) (PS01.R)
+{C:/Users/dring/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (PS01(VD1734
+1481).R) (PS01(VD17341481).R) (PS01(VD17341481).R)
+(PS01(VD17341481).R) (PS01(VD17341481).R)
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-(PS01.R) (PS01.R [2]) (PS01.R) (PS01.R) [3] (PS01.R)
+(PS01(VD17341481).R) (PS01(VD17341481).R [2]) (PS01(VD17341481).R)
+(PS01(VD17341481).R) [3] (PS01(VD17341481).R)
 <./images/YandX1.jpeg, id=58, 392.21532pt x 251.43938pt>
 File: ./images/YandX1.jpeg Graphic file (type jpg)
 <use ./images/YandX1.jpeg>
-Package pdftex.def Info: ./images/YandX1.jpeg  used on input line 197.
+Package pdftex.def Info: ./images/YandX1.jpeg  used on input line 199.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
  [4 <./images/YandX1.jpeg>]
 <./images/YandX2.jpeg, id=66, 392.21532pt x 251.43938pt>
 File: ./images/YandX2.jpeg Graphic file (type jpg)
 <use ./images/YandX2.jpeg>
-Package pdftex.def Info: ./images/YandX2.jpeg  used on input line 202.
+Package pdftex.def Info: ./images/YandX2.jpeg  used on input line 204.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
 <./images/YandX3.jpeg, id=67, 392.21532pt x 251.43938pt>
 File: ./images/YandX3.jpeg Graphic file (type jpg)
 <use ./images/YandX3.jpeg>
-Package pdftex.def Info: ./images/YandX3.jpeg  used on input line 207.
+Package pdftex.def Info: ./images/YandX3.jpeg  used on input line 209.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
+
 [5 <./images/YandX2.jpeg> <./images/YandX3.jpeg>]
 <./images/X1andX2.jpeg, id=72, 392.21532pt x 251.43938pt>
 File: ./images/X1andX2.jpeg Graphic file (type jpg)
 <use ./images/X1andX2.jpeg>
-Package pdftex.def Info: ./images/X1andX2.jpeg  used on input line 212.
+Package pdftex.def Info: ./images/X1andX2.jpeg  used on input line 214.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
 <./images/X1andX3.jpeg, id=73, 392.21532pt x 251.43938pt>
 File: ./images/X1andX3.jpeg Graphic file (type jpg)
 <use ./images/X1andX3.jpeg>
-Package pdftex.def Info: ./images/X1andX3.jpeg  used on input line 217.
+Package pdftex.def Info: ./images/X1andX3.jpeg  used on input line 219.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
  [6 <./images/X1andX2.jpeg> <./images/X1andX3.jpeg>]
 <./images/X3andX2.jpeg, id=78, 392.21532pt x 251.43938pt>
 File: ./images/X3andX2.jpeg Graphic file (type jpg)
 <use ./images/X3andX2.jpeg>
-Package pdftex.def Info: ./images/X3andX2.jpeg  used on input line 222.
+Package pdftex.def Info: ./images/X3andX2.jpeg  used on input line 224.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
-<./images/RegionEx.jpeg, id=79, 392.21532pt x 252.19218pt>
+ (PS01(VD17341481).R) [7 <./images/X3andX2.jpeg>]
+<./images/RegionExBox.jpeg, id=93, 392.21532pt x 252.19218pt>
+File: ./images/RegionExBox.jpeg Graphic file (type jpg)
+<use ./images/RegionExBox.jpeg>
+Package pdftex.def Info: ./images/RegionExBox.jpeg  used on input line 241.
+(pdftex.def)             Requested size: 392.21436pt x 252.19156pt.
+
+(PS01(VD17341481).R) (PS01(VD17341481).R) [8 <./images/RegionExBox.jpeg>]
+(PS01(VD17341481).R)
+<./images/RegionEx.jpeg, id=109, 392.21532pt x 252.19218pt>
 File: ./images/RegionEx.jpeg Graphic file (type jpg)
 <use ./images/RegionEx.jpeg>
-Package pdftex.def Info: ./images/RegionEx.jpeg  used on input line 233.
+Package pdftex.def Info: ./images/RegionEx.jpeg  used on input line 266.
 (pdftex.def)             Requested size: 392.21436pt x 252.19156pt.
- [7 <./images/X3andX2.jpeg>] (PS01.R) (PS01.R) (PS01.R)
-[8 <./images/RegionEx.jpeg>] (PS01.R) (PS01.R)
-<./images/YandX1byRegion.jpeg, id=108, 392.21532pt x 252.19218pt>
+ [9 <./images/RegionEx.jpeg>] (PS01(VD17341481).R)
+(PS01(VD17341481).R)
+<./images/YandX1byRegion.jpeg, id=124, 392.21532pt x 252.19218pt>
 File: ./images/YandX1byRegion.jpeg Graphic file (type jpg)
 <use ./images/YandX1byRegion.jpeg>
-Package pdftex.def Info: ./images/YandX1byRegion.jpeg  used on input line 261.
+Package pdftex.def Info: ./images/YandX1byRegion.jpeg  used on input line 285.
 (pdftex.def)             Requested size: 392.21436pt x 252.19156pt.
- [9 <./images/YandX1byRegion.jpeg>] (PS01(VD17341481).aux)
+ [10 <./images/YandX1byRegion.jpeg>] (PS01(VD17341481).aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1015,10 +1028,10 @@ Package rerunfilecheck Info: File `PS01(VD17341481).out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27431 strings out of 475248
- 482463 string characters out of 5757813
- 2038801 words of memory out of 5000000
- 48373 multiletter control sequences out of 15000+600000
+ 27470 strings out of 475248
+ 483762 string characters out of 5757813
+ 2037801 words of memory out of 5000000
+ 48392 multiletter control sequences out of 15000+600000
  569162 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,89p,3250b,2167s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1036,9 +1049,9 @@ rs/dring/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/dring/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmti12.pfb><C:/Users/dring/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb>
-Output written on PS01(VD17341481).pdf (9 pages, 413569 bytes).
+Output written on PS01(VD17341481).pdf (10 pages, 522948 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

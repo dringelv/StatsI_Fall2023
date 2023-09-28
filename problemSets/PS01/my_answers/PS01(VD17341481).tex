@@ -83,7 +83,7 @@
 A school counselor was curious about the average of IQ of the students in her school and took a random sample of 25 students' IQ scores. The following is the data set:\\
 \vspace{.5cm}
 
-\lstinputlisting[language=R, firstline=43, lastline=43]{PS01.R}  
+\lstinputlisting[language=R, firstline=43, lastline=43]{PS01(VD17341481).R}  
 
 \vspace{1cm}
 
@@ -92,27 +92,27 @@ A school counselor was curious about the average of IQ of the students in her sc
 	
 		To calculate the confidence interval when the confidence coefficient = .90, I first found the mean:
 		
-		\lstinputlisting[language=R, firstline=60, lastline=61]{PS01.R}  
+		\lstinputlisting[language=R, firstline=60, lastline=61]{PS01(VD17341481).R}  
 		
 		This returned a mean of 98.44
 		
 		Then, I found the standard deviation:
 		
-		\lstinputlisting[language=R, firstline=65, lastline=65]{PS01.R}
+		\lstinputlisting[language=R, firstline=65, lastline=65]{PS01(VD17341481).R}
 		Which returned a value of 13.09
 		
 		So I could find the standard error.
-		\lstinputlisting[language=R, firstline=69, lastline=69]{PS01.R} 
+		\lstinputlisting[language=R, firstline=69, lastline=69]{PS01(VD17341481).R} 
 		Value of 2.62 
 		
 		Then I found the t-score
- 		\lstinputlisting[language=R, firstline=73, lastline=73]{PS01.R}  
+ 		\lstinputlisting[language=R, firstline=73, lastline=73]{PS01(VD17341481).R}  
 		
 		I could use this to find the upper bounds of confidence interval
-		\lstinputlisting[language=R, firstline=77, lastline=77]{PS01.R}  
+		\lstinputlisting[language=R, firstline=77, lastline=77]{PS01(VD17341481).R}  
 		
 		And the lower bounds of confidence interval
-		\lstinputlisting[language=R, firstline=81, lastline=81]{PS01.R} 
+		\lstinputlisting[language=R, firstline=81, lastline=81]{PS01(VD17341481).R} 
 		 
 		This showed that the 90\% confidence interval for the the average student IQ is 
 		93.96-102.92
@@ -126,7 +126,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 		\textbf{Step 1: Assumptions.}
 		
 		1. The national average is 100.
-		\lstinputlisting[language=R, firstline=94, lastline=94]{PS01.R} 
+		\lstinputlisting[language=R, firstline=94, lastline=94]{PS01(VD17341481).R} 
 		2. The national sample has a normal distribution and random sampling, so we will use a t-score.
 		
 		\textbf{Step 2: State hypothesis.}
@@ -140,15 +140,17 @@ A school counselor was curious about the average of IQ of the students in her sc
 	\end{center}
 
 		\normalsize In R:
-		\lstinputlisting[language=R, firstline=104, lastline=107]{PS01.R}
+		\lstinputlisting[language=R, firstline=104, lastline=107]{PS01(VD17341481).R}
 		
 		or, a faster way
 	
-		\lstinputlisting[language=R, firstline=111, lastline=111]{PS01.R}
+		\lstinputlisting[language=R, firstline=111, lastline=111]{PS01(VD17341481).R}
+		
+		t-statistic = -0.59574
 		
 		\textbf{Step 4: Calculate a P-value}
 		
-		\lstinputlisting[language=R, firstline=114, lastline=114]{PS01.R}
+		\lstinputlisting[language=R, firstline=114, lastline=114]{PS01(VD17341481).R}
 		
 		P-value = 0.722
 		
@@ -179,7 +181,7 @@ A school counselor was curious about the average of IQ of the students in her sc
 \vspace{.5cm}
 \noindent Explore the \texttt{expenditure} data set and import data into \texttt{R}.
 \vspace{.5cm}
-\lstinputlisting[language=R, firstline=131, lastline=131]{PS01.R}  
+\lstinputlisting[language=R, firstline=131, lastline=131]{PS01(VD17341481).R}  
 \vspace{.5cm}
 \begin{itemize}
 
@@ -228,23 +230,45 @@ I used the code we learnt in coding camp to plot these graphs.
 \item
 Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
 
-I thought the best way to show this relationship was using a box plot. The red dots show the mean per capita expenditure on shelters/housing assistance in each region.
+I thought the best way to show this relationship was using a box plot.
 
-\includegraphics{RegionEx}
+I used this code to plot this relationship:
+\lstinputlisting[language=R, firstline=185, lastline=192]{PS01(VD17341481).R}
+\newpage
 
-In order to get these means, I had to take the four subsets out of the data, and turn them into separate objects:
-\lstinputlisting[language=R, firstline=190, lastline=193]{PS01.R}
+Resulting in this box plot.
+
+\includegraphics{RegionExBox}
+
+In order to get the means, I had to take the four subsets out of the data, and turn them into separate objects:
+\lstinputlisting[language=R, firstline=196, lastline=199]{PS01(VD17341481).R}
 I used the code we learnt in coding camp for this.
 
 Then, I found their respective means:
-\lstinputlisting[language=R, firstline=196, lastline=199]{PS01.R}
+\lstinputlisting[language=R, firstline=202, lastline=205]{PS01(VD17341481).R}
 
-I used this in my script to plot the box plot:
-\lstinputlisting[language=R, firstline=208, lastline=215]{PS01.R}
+This showed the following means:
+
+\textbf{North-East:} 79.44
+
+\textbf{North-Central:} 83.92
+
+\textbf{South:} 69.19
+
+\textbf{West:} 88.31
+
+\newpage
+I used this script to plot a new box plot:
+\lstinputlisting[language=R, firstline=214, lastline=222]{PS01(VD17341481).R}
+
+I came upon the issue that R saw the values for region as continuous, so I had to use the code \texttt{x = factor} to ensure that these values were categorical when plotting the graph. And I also used the code \texttt{ stat\_summary(fun.y="mean", color="red")} to show the means. I adapted this from  \href{https://www.geeksforgeeks.org/how-to-show-mean-value-in-boxplots-with-ggplot2/}{code I found online}.
+
+\includegraphics{RegionEx}
 
 This plot shows the distribution of expenditure in different regions as well as their respective means. I chose to use ggplot, as I found it easier to work with than R's built in plot feature.
+As we can see, region 4, the West, has the highest mean expenditure on housing assistance.
 
-I also came upon the issue that R saw the values for region as continuous, so I had to use the code \texttt{x = factor} to ensure that these values were categorical when plotting the graph.
+
 
 \vspace{.5cm}
 \item
@@ -252,11 +276,11 @@ Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph
 
 A simple plot shows us a positive correlation between X1 and Y, as, in general, as Y increases, so does X1. This correlation gets weaker as the values get bigger.
 
-\lstinputlisting[language=R, firstline=222, lastline=223]{PS01.R}
+\lstinputlisting[language=R, firstline=230, lastline=231]{PS01(VD17341481).R}
 
 Plotting the same graph while grouping the results according to region.
 
-\lstinputlisting[language=R, firstline=228, lastline=233]{PS01.R} 
+\lstinputlisting[language=R, firstline=236, lastline=249]{PS01(VD17341481).R} 
 
 \includegraphics{YandX1byRegion}
 

@@ -155,7 +155,7 @@ barplot(prop.table(table(df_s$genre,
                            cex = 0.8, 
                            box.col = "white"))
 
-png(filename = "tutorials/03/barplot.png",
+png(filename = "C:/Users/dring/Documents/GitHub/StatsI_Fall2023/tutorials/03/barplot.png",
     width = 600,
     height = 350)
 barplot(prop.table(table(df_s$genre, 
