@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.26)  27 SEP 2023 13:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.26)  28 SEP 2023 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -966,45 +966,45 @@ File: ./images/YandX1.jpeg Graphic file (type jpg)
 <use ./images/YandX1.jpeg>
 Package pdftex.def Info: ./images/YandX1.jpeg  used on input line 189.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
-<./images/YandX2.jpeg, id=59, 392.21532pt x 251.43938pt>
+ [4 <./images/YandX1.jpeg>]
+<./images/YandX2.jpeg, id=66, 392.21532pt x 251.43938pt>
 File: ./images/YandX2.jpeg Graphic file (type jpg)
 <use ./images/YandX2.jpeg>
-Package pdftex.def Info: ./images/YandX2.jpeg  used on input line 194.
+Package pdftex.def Info: ./images/YandX2.jpeg  used on input line 196.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
- [4 <./images/YandX1.jpeg>]
 <./images/YandX3.jpeg, id=67, 392.21532pt x 251.43938pt>
 File: ./images/YandX3.jpeg Graphic file (type jpg)
 <use ./images/YandX3.jpeg>
-Package pdftex.def Info: ./images/YandX3.jpeg  used on input line 199.
+Package pdftex.def Info: ./images/YandX3.jpeg  used on input line 201.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
 <./images/X1andX2.jpeg, id=68, 392.21532pt x 251.43938pt>
 File: ./images/X1andX2.jpeg Graphic file (type jpg)
 <use ./images/X1andX2.jpeg>
-Package pdftex.def Info: ./images/X1andX2.jpeg  used on input line 204.
+Package pdftex.def Info: ./images/X1andX2.jpeg  used on input line 206.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
 [5 <./images/YandX2.jpeg> <./images/YandX3.jpeg>]
 <./images/X1andX3.jpeg, id=73, 392.21532pt x 251.43938pt>
 File: ./images/X1andX3.jpeg Graphic file (type jpg)
 <use ./images/X1andX3.jpeg>
-Package pdftex.def Info: ./images/X1andX3.jpeg  used on input line 209.
+Package pdftex.def Info: ./images/X1andX3.jpeg  used on input line 211.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
 <./images/X3andX2.jpeg, id=74, 392.21532pt x 251.43938pt>
 File: ./images/X3andX2.jpeg Graphic file (type jpg)
 <use ./images/X3andX2.jpeg>
-Package pdftex.def Info: ./images/X3andX2.jpeg  used on input line 214.
+Package pdftex.def Info: ./images/X3andX2.jpeg  used on input line 216.
 (pdftex.def)             Requested size: 392.21436pt x 251.43875pt.
  [6 <./images/X1andX2.jpeg> <./images/X1andX3.jpeg>]
 <./images/RegionEx.jpeg, id=79, 392.21532pt x 252.19218pt>
 File: ./images/RegionEx.jpeg Graphic file (type jpg)
 <use ./images/RegionEx.jpeg>
-Package pdftex.def Info: ./images/RegionEx.jpeg  used on input line 225.
+Package pdftex.def Info: ./images/RegionEx.jpeg  used on input line 227.
 (pdftex.def)             Requested size: 392.21436pt x 252.19156pt.
  [7 <./images/X3andX2.jpeg>] (PS01.R) (PS01.R) (PS01.R)
 [8 <./images/RegionEx.jpeg>] (PS01.R) (PS01.R)
 <./images/YandX1byRegion.jpeg, id=108, 392.21532pt x 252.19218pt>
 File: ./images/YandX1byRegion.jpeg Graphic file (type jpg)
 <use ./images/YandX1byRegion.jpeg>
-Package pdftex.def Info: ./images/YandX1byRegion.jpeg  used on input line 253.
+Package pdftex.def Info: ./images/YandX1byRegion.jpeg  used on input line 255.
 (pdftex.def)             Requested size: 392.21436pt x 252.19156pt.
  [9 <./images/YandX1byRegion.jpeg>] (PS01.aux)
  ***********
@@ -1036,7 +1036,7 @@ rs/dring/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/dring/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmti12.pfb><C:/Users/dring/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmtt12.pfb>
-Output written on PS01.pdf (9 pages, 412251 bytes).
+Output written on PS01.pdf (9 pages, 456547 bytes).
 PDF statistics:
  191 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
