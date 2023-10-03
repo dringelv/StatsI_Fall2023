@@ -144,6 +144,8 @@ ls.str(expenditure)
 # X3 - Number of people per thousand residing in urban areas in state
 # Region - 1 = Northeast, 2 = North Central, 3 = South, 4 = West
 
+plot(expenditure[c("Y", "X1", "X2", "X3")])
+
 ggplot(expenditure, aes(X1, Y))+
   geom_point() +
   theme_classic()
