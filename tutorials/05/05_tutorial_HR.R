@@ -5,7 +5,7 @@
 getwd()
 
 # Set working directory 
-setwd("/Users/hannahfrank/StatsI_Fall2023_prep")
+setwd("C:/Users/dring/Documents/GitHub/StatsI_Fall2023/tutorials/05")
 getwd()
 
 # Agenda 
@@ -81,12 +81,12 @@ names(df)[8] <- "democracy"
 View(df)
 
 # Save df
-write.csv(df, "datasets/df_income_mortality.csv")
+write.csv(df, "C:/Users/dring/Documents/GitHub/StatsI_Fall2023/datasets/df_income_mortality.csv")
 
 # (b.) Data wrangling -------
 
 # Load df
-df <- read_csv("datasets/df_income_mortality.csv")
+df <- read_csv("C:/Users/dring/Documents/GitHub/StatsI_Fall2023/datasets/df_income_mortality.csv")
 View(df)
 
 # Get unique countries in df
@@ -248,3 +248,4 @@ stargazer(model)
 # Fit model
 model <- lm(mort ~ democracy, data=df_na)
 summary(model)
+
