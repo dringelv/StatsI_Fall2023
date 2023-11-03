@@ -70,7 +70,7 @@ chi_test$stdres
 # (a.) Correlation -----
 
 # Load data 
-df <- read.csv("datasets/fictional_data.csv")
+df <- read.csv("C:/Users/dring/Documents/GitHub/StatsI_Fall2023/datasets/fictional_data.csv")
 View(df)
 
 # Scatter plot 
