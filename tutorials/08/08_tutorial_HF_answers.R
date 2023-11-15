@@ -179,7 +179,7 @@ df$best # Select variable
 is.na(df$best) # Check if value is na
 df$best[is.na(df$best)] # Subset rows which are na
 df$best[is.na(df$best)] = 0 # Replace with 0
-
+View(df)
 # Save df
 write.csv(df, "df_income_mortality_best.csv")
 
@@ -205,11 +205,12 @@ df_s
 
 # Get the mean income and max child mortality for each year
 df_grouped <- group_by(df, date) # Group by year
+View(df_grouped)
 df_mean_inc <- summarize(df_grouped, 
                          n=n(), # Counts
                          mean_inc=mean(gdp_per_cap), # Mean
                          max_mort=max(mort)) # Max
-df_mean_inc
+View(df_mean_inc)
 
 # What about missing values?
 ?mean
@@ -244,6 +245,8 @@ df_na <- mutate(df_na, # Replace with mean if value is missing
                 sec_enrol = ifelse(is.na(sec_enrol), 
                                    mean(sec_enrol, na.rm = TRUE), 
                                    sec_enrol))
+
+View(df_na)
 
 # Step by step:
 # ifelse(test, yes, no) 

@@ -65,7 +65,7 @@ for(j in 1:length(cor.level)){ # Start the j loop
 # Print estimates
 par.est.ov
 
-# Get mean of estimates
+ # Get mean of estimates
 # True b1 is 0.5
 mean(par.est.ov[ , 1]) # r=0
 mean(par.est.ov[ , 2]) # r=0.1

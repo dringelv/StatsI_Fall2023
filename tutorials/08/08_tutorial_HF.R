@@ -112,6 +112,8 @@ write.csv(df, "df_income_mortality.csv")
 
 # (b.) Data wrangling -------
 
+housing <- read_csv("F2035.20231103122941.csv")
+view(housing)
 # Load df
 df <- read_csv("df_income_mortality_best.csv")
 View(df)
