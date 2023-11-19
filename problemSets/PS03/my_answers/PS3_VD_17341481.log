@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.26)  19 NOV 2023 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.26)  19 NOV 2023 23:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -978,14 +978,14 @@ Package pdftex.def Info: ./PS3_figures/Reg2.jpeg  used on input line 186.
 (pdftex.def)             Requested size: 371.88846pt x 283.0568pt.
  [4]
 (PS3_VD_17341481.R) [5 <./PS3_figures/Reg2.jpeg>] (PS3_VD_17341481.R) [6]
-<./PS3_figures/Reg3.jpeg, id=74, 371.88937pt x 283.0575pt>
+<./PS3_figures/Reg3.jpeg, id=73, 371.88937pt x 283.0575pt>
 File: ./PS3_figures/Reg3.jpeg Graphic file (type jpg)
 <use ./PS3_figures/Reg3.jpeg>
 Package pdftex.def Info: ./PS3_figures/Reg3.jpeg  used on input line 244.
 (pdftex.def)             Requested size: 371.88846pt x 283.0568pt.
 
 [7 <./PS3_figures/Reg3.jpeg>] (PS3_VD_17341481.R) [8]
-<./PS3_figures/Reg4.jpeg, id=91, 371.88937pt x 283.0575pt>
+<./PS3_figures/Reg4.jpeg, id=90, 371.88937pt x 283.0575pt>
 File: ./PS3_figures/Reg4.jpeg Graphic file (type jpg)
 <use ./PS3_figures/Reg4.jpeg>
 Package pdftex.def Info: ./PS3_figures/Reg4.jpeg  used on input line 297.
@@ -1003,10 +1003,10 @@ Package rerunfilecheck Info: File `PS3_VD_17341481.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27298 strings out of 475248
- 479482 string characters out of 5757813
+ 27295 strings out of 475248
+ 479438 string characters out of 5757813
  1946801 words of memory out of 5000000
- 48277 multiletter control sequences out of 15000+600000
+ 48275 multiletter control sequences out of 15000+600000
  568855 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,89p,3249b,2216s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1027,9 +1027,9 @@ nts/cm/cmsy10.pfb><C:/Users/dring/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmsy8.pfb><C:/Users/dring/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb><C:/Users/dring/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PS3_VD_17341481.pdf (10 pages, 633620 bytes).
+Output written on PS3_VD_17341481.pdf (10 pages, 633016 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
