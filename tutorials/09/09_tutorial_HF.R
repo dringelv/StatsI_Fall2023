@@ -166,3 +166,4 @@ stargazer(model1,model_eco,model_pol,model_cul,model_final)
 # How to visualize results?
 coefplot(model_final)
 coefplot(model1, add=TRUE, col.pts="gray")
+
