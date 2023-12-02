@@ -57,7 +57,7 @@ df_na <- df[complete.cases(df), ]
 rownames(df_na) <- 1:nrow(df_na) 
 
 # Final model
-model_final <- lm(euftf_re~edlvdie + 
+model_final <- lm(euftf_re~eduyrs + 
                            hinctnta + 
                            trstplt + 
                            imwbcnt + 
@@ -94,14 +94,14 @@ which(sort(cooks_d, decreasing=TRUE)>thres)
 # Investigate case by case. Coding error? Omitted variables?
 
 # Subsetting data frames, df[row,column]
-df_na[263,c("euftf_re","edlvdie","hinctnta","trstplt","imwbcnt","gndr","agea","brncntr")]
+df_na[159,c("euftf_re","eduyrs","hinctnta","trstplt","imwbcnt","gndr","agea","brncntr")]
+model_final$fitted.values[159] # Predicted outcome
+
+df_na[458,c("euftf_re","eduyrs","hinctnta","trstplt","imwbcnt","gndr","agea","brncntr")]
+model_final$fitted.values[458] # Predicted outcome
+
+df_na[263,c("euftf_re","eduyrs","hinctnta","trstplt","imwbcnt","gndr","agea","brncntr")]
 model_final$fitted.values[263] # Predicted outcome
-
-df_na[650,c("euftf_re","edlvdie","hinctnta","trstplt","imwbcnt","gndr","agea","brncntr")]
-model_final$fitted.values[650] # Predicted outcome
-
-df_na[871,c("euftf_re","edlvdie","hinctnta","trstplt","imwbcnt","gndr","agea","brncntr")]
-model_final$fitted.values[871] # Predicted outcome
 
 ### Difference in betas ####
 # Difference in coefficients when observation 
@@ -114,12 +114,12 @@ dfbeta <- dfbeta(model_final)
 View(dfbeta)
 
 # Print results for some observations
-dfbeta[1, c("edlvdie")]
-dfbeta[2, c("edlvdie")]
-sprintf("%.10f", dfbeta[2, c("edlvdie")])
+dfbeta[1, c("eduyrs")]
+dfbeta[2, c("eduyrs")]
+sprintf("%.10f", dfbeta[2, c("eduyrs")])
 
 # Find maximum absolute values for each coefficient 
-dfbeta[,c("edlvdie")][which.max(abs(dfbeta[,c("edlvdie")]))]
+dfbeta[,c("eduyrs")][which.max(abs(dfbeta[,c("eduyrs")]))]
 dfbeta[,c("hinctnta")][which.max(abs(dfbeta[,c("hinctnta")]))]
 dfbeta[,c("trstplt")][which.max(abs(dfbeta[,c("trstplt")]))]
 dfbeta[,c("imwbcnt")][which.max(abs(dfbeta[,c("imwbcnt")]))]
@@ -164,6 +164,7 @@ plot(model_final, which=2)
 # The error has a constant variance (homoscedasticity)
 
 # Residual versus fitted plot
+# (checking the skedasticity)
 plot(model_final, which=1)
 
 # What to do if labels of observations are overlapping?
@@ -173,7 +174,7 @@ which(model_final$residuals>6.3 & model_final$fitted.values<4.5)
 # The effect between X and Y is linear
 
 # Scatter plots 
-plot(df_na$edlvdie,jitter(df_na$euftf_re,2))
+plot(df_na$eduyrs,jitter(df_na$euftf_re,2))
 plot(df_na$hinctnta,jitter(df_na$euftf_re,2))
 plot(df_na$trstplt,jitter(df_na$euftf_re,2))
 plot(df_na$imwbcnt,jitter(df_na$euftf_re,2))
@@ -186,7 +187,7 @@ residualPlots(model_final)
 df_na$trstplt_trstplt <- df_na$trstplt^2
 
 # Fit model
-model_quad <- lm(euftf_re~edlvdie + 
+model_quad <- lm(euftf_re~eduyrs + 
                    hinctnta + 
                    trstplt + 
                    trstplt_trstplt +
@@ -200,7 +201,7 @@ summary(model_quad)
 # Independent variables are strongly correlated
 
 # Correlation matrix
-cor(df_na[, c("edlvdie","hinctnta","trstplt","imwbcnt","agea")])
+cor(df_na[, c("eduyrs","hinctnta","trstplt","imwbcnt","agea")])
 
 # Variance Inflation Factor
 vif(model_final)
@@ -212,7 +213,7 @@ cor(df_na$trust_att,df_na$trstplt)
 cor(df_na$trust_att,df_na$imwbcnt)
 
 # Refit model with highly correlated variables
-model_collin <- lm(euftf_re~edlvdie + 
+model_collin <- lm(euftf_re~eduyrs + 
                    hinctnta + 
                    trstplt + 
                    imwbcnt +
