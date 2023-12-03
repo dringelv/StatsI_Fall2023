@@ -62,8 +62,8 @@ stargazer(lm1)
 ### Question 2
 
 # (a)
+# Hypothesis test
 0.042/0.016
-
 # Given values
 t_statistic <- 2.625
 degrees_of_freedom <- 27
@@ -76,7 +76,7 @@ cat("p-value:", p_value, "\n")
 
 # (b)
 0.042/0.013
-
+# Hypothesis test
 # Given values
 t_statistic2 <- 3.230769
 degrees_of_freedom2 <- 73
